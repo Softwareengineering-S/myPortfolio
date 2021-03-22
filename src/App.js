@@ -9,14 +9,23 @@ import About from "./pages/about/about.component";
 import Skills from './pages/skills/skills.component';
 import Experience from './pages/experience/experience.component';
 import ProjectTimeline from './components/projects-timeline/projects-timeline.component'
+ import Particles from "react-particles-js";
+ import { particlesOptions } from "./particlesOptions";
+import Footer from './components/footer/footer.component';
+import ContactForm from './pages/contact-form/contact-form.component';
+
 import './App.css';
 
 const App = () => {
   return (
-    <div className="App" style={{position:"relative"}}>
+    <div  style={{position:"relative"}}>
       <MyNavbar />
       <MyCarousel />
       <MyTitleMessage/>
+      <Particles
+        className="particles particles-box"
+        params={particlesOptions}
+      /> 
       {/*about me section */}
       <div>
       <Parallax 
@@ -59,6 +68,8 @@ const App = () => {
        <ProjectTimeline />
        </Fade>
        </Container>
+       <Footer/>
+       <ContactForm/>
       
        </div>
 
