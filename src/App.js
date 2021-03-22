@@ -8,6 +8,7 @@ import MyTitleMessage from "./components/title-message/title-message.component.j
 import About from "./pages/about/about.component";
 import Skills from './pages/skills/skills.component';
 import Experience from './pages/experience/experience.component';
+import ProjectTimeline from './components/projects-timeline/projects-timeline.component'
 import './App.css';
 
 const App = () => {
@@ -53,8 +54,15 @@ const App = () => {
        </Container>
       
        </div>
+       <Container className="container-box rounded">
+          <Fade duration={500}>
+       <ProjectTimeline />
+       </Fade>
+       </Container>
+      
+       </div>
 
-      </div>
+      
       
 
   );
